@@ -1,29 +1,29 @@
 Sandbox_CH = {
-	Sandbox_HN_HordeNightHour = "«Í¼é¶}©l®É¶¡"
-	Sandbox_HN_HordeNightHour_tooltip = "¨M©w«Í¼é¦b¤@¤Ñªº­þ¤@¤p®É¶}©l¡C"
+	Sandbox_HN_HordeNightHour = "ï¿½Í¼ï¿½}ï¿½lï¿½É¶ï¿½"
+	Sandbox_HN_HordeNightHour_tooltip = "ï¿½Mï¿½wï¿½Í¼ï¿½bï¿½@ï¿½Ñªï¿½ï¿½ï¿½ï¿½@ï¿½pï¿½É¶}ï¿½lï¿½C"
 
-	Sandbox_HN_FirstHordeNightDay = "²Ä¤@¦¸«Í¼éªº¤é´Á"
-	Sandbox_HN_FirstHordeNightDay_tooltip = "¨M©w²Ä¤@¦¸«Í¼é¶}©lªº¤é´Á¡C\n0·N¨ýµÛ¦b¥X¥Íªº³o¤@¤Ñ¶}©l¡A1·N¨ýµÛ¦b¥X¥Í«áªº¤U¤@¤Ñ¶}©l¡C"
+	Sandbox_HN_FirstHordeNightDay = "ï¿½Ä¤@ï¿½ï¿½ï¿½Í¼éªºï¿½ï¿½ï¿½"
+	Sandbox_HN_FirstHordeNightDay_tooltip = "ï¿½Mï¿½wï¿½Ä¤@ï¿½ï¿½ï¿½Í¼ï¿½}ï¿½lï¿½ï¿½ï¿½ï¿½ï¿½ï¿½C\n0ï¿½Nï¿½ï¿½ï¿½Û¦bï¿½Xï¿½Íªï¿½ï¿½oï¿½@ï¿½Ñ¶}ï¿½lï¿½A1ï¿½Nï¿½ï¿½ï¿½Û¦bï¿½Xï¿½Í«áªºï¿½Uï¿½@ï¿½Ñ¶}ï¿½lï¿½C"
 
-	Sandbox_HN_HordeNightFrequency = "«Í¼é¶¡¹j"
-	Sandbox_HN_HordeNightFrequency_tooltip = "¨M©w²Ä¤@¦¸«Í¼é¤§«áªº¨C¤@¦¸«Í¼é±N¶¡¹j¦h¤Ö¤Ñµo¥Í¤@¦¸¡C\n1·N¨ýµÛ¨C¤@¤Ñ³£·|¦³«Í¼é¡C"
+	Sandbox_HN_HordeNightFrequency = "ï¿½Í¼é¶¡ï¿½j"
+	Sandbox_HN_HordeNightFrequency_tooltip = "ï¿½Mï¿½wï¿½Ä¤@ï¿½ï¿½ï¿½Í¼é¤§ï¿½áªºï¿½Cï¿½@ï¿½ï¿½ï¿½Í¼ï¿½Nï¿½ï¿½ï¿½jï¿½hï¿½Ö¤Ñµoï¿½Í¤@ï¿½ï¿½ï¿½C\n1ï¿½Nï¿½ï¿½ï¿½Û¨Cï¿½@ï¿½Ñ³ï¿½ï¿½|ï¿½ï¿½ï¿½Í¼ï¿½C"
 
-	Sandbox_HN_FirstHordeNightZombiesCount = "²Ä¤@¦¸«Í¼éªº»ø«Í¶q"
-	Sandbox_HN_FirstHordeNightZombiesCount_tooltip = "¨M©w²Ä¤@¦¸«Í¼é®É·|¨Ó¦h¤Ö»ø«Í¡C\nª`·N¡G¤Ó¦hªº»ø«Í·|¾É­P¹CÀ¸¹B¦æ¤£¨Î¡C"
+	Sandbox_HN_FirstHordeNightZombiesCount = "ï¿½Ä¤@ï¿½ï¿½ï¿½Í¼éªºï¿½ï¿½ï¿½Í¶q"
+	Sandbox_HN_FirstHordeNightZombiesCount_tooltip = "ï¿½Mï¿½wï¿½Ä¤@ï¿½ï¿½ï¿½Í¼ï¿½É·|ï¿½Ó¦hï¿½Ö»ï¿½ï¿½Í¡C\nï¿½`ï¿½Nï¿½Gï¿½Ó¦hï¿½ï¿½ï¿½ï¿½ï¿½Í·|ï¿½É­Pï¿½Cï¿½ï¿½ï¿½Bï¿½æ¤£ï¿½Î¡C"
 
-	Sandbox_HN_HordeNightZombieIncrement = "¨C¤@¦¸«Í¼éªº»ø«Í¼Wªø¶q"
-	Sandbox_HN_HordeNightZombieIncrement_tooltip = "¨M©w¨C¦s¬¡¹L¤@¦¸«Í¼é«á¡A¤U¤@¦¸«Í¼é·|¼W¥[¦h¤Ö»ø«Í¼Æ¶q¡C\nª`·N¡G¤Ó¦hªº»ø«Í·|¾É­P¹CÀ¸¹B¦æ¤£¨Î¡C"
+	Sandbox_HN_HordeNightZombieIncrement = "ï¿½Cï¿½@ï¿½ï¿½ï¿½Í¼éªºï¿½ï¿½ï¿½Í¼Wï¿½ï¿½ï¿½q"
+	Sandbox_HN_HordeNightZombieIncrement_tooltip = "ï¿½Mï¿½wï¿½Cï¿½sï¿½ï¿½ï¿½Lï¿½@ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Aï¿½Uï¿½@ï¿½ï¿½ï¿½Í¼ï¿½|ï¿½Wï¿½[ï¿½hï¿½Ö»ï¿½ï¿½Í¼Æ¶qï¿½C\nï¿½`ï¿½Nï¿½Gï¿½Ó¦hï¿½ï¿½ï¿½ï¿½ï¿½Í·|ï¿½É­Pï¿½Cï¿½ï¿½ï¿½Bï¿½æ¤£ï¿½Î¡C"
 
-	Sandbox_HN_HordeNightZombieCountMax = "«Í¼éªº»ø«Í¶q¤W­­"
-	Sandbox_HN_HordeNightZombieCountMax_tooltip = "¨M©w¤@¦¸«Í¼é³Ì¦h¯à¨Ó¦h¤Ö»ø«Í¡C\nª`·N¡G¤Ó¦hªº»ø«Í·|¾É­P¹CÀ¸¹B¦æ¤£¨Î¡C"
+	Sandbox_HN_HordeNightZombieCountMax = "ï¿½Í¼éªºï¿½ï¿½ï¿½Í¶qï¿½Wï¿½ï¿½"
+	Sandbox_HN_HordeNightZombieCountMax_tooltip = "ï¿½Mï¿½wï¿½@ï¿½ï¿½ï¿½Í¼ï¿½Ì¦hï¿½ï¿½Ó¦hï¿½Ö»ï¿½ï¿½Í¡C\nï¿½`ï¿½Nï¿½Gï¿½Ó¦hï¿½ï¿½ï¿½ï¿½ï¿½Í·|ï¿½É­Pï¿½Cï¿½ï¿½ï¿½Bï¿½æ¤£ï¿½Î¡C"
 
-	Sandbox_HN_RandomHordeNightChance = "ÀH¾÷«Í¼é¥X²{´X²v"
-	Sandbox_HN_RandomHordeNightChance_tooltip = "¨M©w¦b³W©wªº«Í¼é¤é´Á¤§¥~ªº¤é¤l¤¤¡AÀH¾÷¥X²{«Í¼éªº´X²v¡C\n0.0·N¨ýµÛ¤£·|¦³ÀH¾÷«Í¼é¡A1.0·N¨ýµÛ¨C¤Ñ³£·|¦³«Í¼é¡C"
+	Sandbox_HN_RandomHordeNightChance = "ï¿½Hï¿½ï¿½ï¿½Í¼ï¿½Xï¿½{ï¿½Xï¿½v"
+	Sandbox_HN_RandomHordeNightChance_tooltip = "ï¿½Mï¿½wï¿½bï¿½Wï¿½wï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½~ï¿½ï¿½ï¿½ï¿½lï¿½ï¿½ï¿½Aï¿½Hï¿½ï¿½ï¿½Xï¿½{ï¿½Í¼éªºï¿½Xï¿½vï¿½C\n0.0ï¿½Nï¿½ï¿½ï¿½Û¤ï¿½ï¿½|ï¿½ï¿½ï¿½Hï¿½ï¿½ï¿½Í¼ï¿½A1.0ï¿½Nï¿½ï¿½ï¿½Û¨Cï¿½Ñ³ï¿½ï¿½|ï¿½ï¿½ï¿½Í¼ï¿½C"
 
-	Sandbox_HN_HordeNightZombieSpawnDistance = "«Í¼é»ø«Í¥Í¦¨¶ZÂ÷"
-	Sandbox_HN_HordeNightZombieSpawnDistance_tooltip = "¨M©w¦b«Í¼é¤¤»ø«Í¦bª±®aªþªñ¥Í¦¨ªº³Ì»·¶ZÂ÷¡C \n¦pªG¦b«Í¼é¤¤¨S¦³»ø«Í¥Í¦¨½Ð´î¤Ö³o­Ó¶ZÂ÷¡C"
+	Sandbox_HN_HordeNightZombieSpawnDistance = "ï¿½Í¼ï¿½ï¿½ï¿½Í¥Í¦ï¿½ï¿½Zï¿½ï¿½"
+	Sandbox_HN_HordeNightZombieSpawnDistance_tooltip = "ï¿½Mï¿½wï¿½bï¿½Í¼é¤¤ï¿½ï¿½ï¿½Í¦bï¿½ï¿½ï¿½aï¿½ï¿½ï¿½ï¿½Í¦ï¿½ï¿½ï¿½ï¿½Ì»ï¿½ï¿½Zï¿½ï¿½ï¿½C \nï¿½pï¿½Gï¿½bï¿½Í¼é¤¤ï¿½Sï¿½ï¿½ï¿½ï¿½ï¿½Í¥Í¦ï¿½ï¿½Ð´ï¿½Ö³oï¿½Ó¶Zï¿½ï¿½ï¿½C"
 	
-	Sandbox_HN_HordeNightIndicator = "·í¤é«Í¼é¼ÐÃÑ"
-	Sandbox_HN_HordeNightIndicator_tooltip = "¥´¶}«á¡A¦pªG³B¤_·|µo¥Í«Í¼é¤§©]ªº¤é¤l¡A¦b«Ì¹õ¥k¤W¨¤·|Åã¥Ü¤@­Ó¼ÐÃÑ¹Ï¼Ð¡C³o­Ó¤£·|¼ÐÃÑÀH¾÷«Í¼é¤§©]¡C"
+	Sandbox_HN_HordeNightIndicator = "ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½"
+	Sandbox_HN_HordeNightIndicator_tooltip = "ï¿½ï¿½ï¿½}ï¿½ï¿½Aï¿½pï¿½Gï¿½Bï¿½_ï¿½|ï¿½oï¿½Í«Í¼é¤§ï¿½]ï¿½ï¿½ï¿½ï¿½lï¿½Aï¿½bï¿½Ì¹ï¿½ï¿½kï¿½Wï¿½ï¿½ï¿½|ï¿½ï¿½Ü¤@ï¿½Ó¼ï¿½ï¿½Ñ¹Ï¼Ð¡Cï¿½oï¿½Ó¤ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½ï¿½Hï¿½ï¿½ï¿½Í¼é¤§ï¿½]ï¿½C"
 	
 }

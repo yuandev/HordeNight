@@ -43,22 +43,18 @@ function HN_SpawnOneZombieAround(cPlayer)
 		local zLocationX = 0;
 		local zLocationY = 0;
 		local canSpawn = false;
-		local sandboxDistance = SandboxVars.HordeNightMain.HordeNightZombieSpawnDistance;
+		local sandboxDistanceMax = SandboxVars.HordeNightMain.HordeNightZombieSpawnDistanceMax;
+		local sandboxDistanceMin = SandboxVars.HordeNightMain.HordeNightZombieSpawnDistanceMin;
 		for i=0, 100 do
-				randomR = sandboxDistance - ZombRand(6) + 3;
-				if ZombRand(2) == 0 then
-						zLocationX = ZombRand(randomR);
-						zLocationY = meth.modf(sqrt(randomR * randomR - zLocationX * zLocationX));
-						if ZombRand(2) == 0 then
-								zLocationX = 0 - zLocationX;
-						end
-				else
-						zLocationY = ZombRand(randomR);
-						zLocationX = meth.modf(sqrt(randomR * randomR - zLocationY * zLocationY));
-						if ZombRand(2) == 0 then
-								zLocationY = 0 - zLocationY;
-						end
-				end
+
+				randomR = 0;
+				randomRad = 0;
+
+				randomR = math.random([sandboxDistanceMin,sandboxDistanceMax]);
+    			randomRad = math.rad(math.random(360));
+    			zLocationX = math.modf(math.sin(randomRad)*randomR);
+    			zLocationY = math.modf(math.cos(randomRad)*randomR);
+
 				zLocationX = zLocationX + pLocation:getX();
 				zLocationY = zLocationY + pLocation:getY();
 				local spawnSpace = getWorld():getCell():getGridSquare(zLocationX, zLocationY, 0);
@@ -132,6 +128,17 @@ function HN_CheckStartHordeNight()
 		end
 end
 
+-- 0:00 Remind before HordeNight Start
+function HN_RemindBeforeStartHordeNight()
+	if getGameTime():getHour() % 24 == 0 then
+		local daysPass = math.floor(HN_getActualSpawnAgeDay());
+		print("New Day: "..tostring(daysPass));
+		if daysPass >= SandboxVars.HordeNightMain.FirstHordeNightDay then
+			
+		end	
+	end	
+end
+
 -- Start the Horde Night
 function HN_StartHordeNight(HNcounts)
 		local HNZombieCounts = SandboxVars.HordeNightMain.FirstHordeNightZombiesCount + SandboxVars.HordeNightMain.HordeNightZombieIncrement * HNcounts;
@@ -146,14 +153,26 @@ function HN_StartHordeNight(HNcounts)
 end
 
 -- When start, alarm everyone online
-function HN_AlarmEveryOne()
+
+function HN_GET_AlarmText()
+	if getGameTime():getHour() % 24 == 0 then
+		local alarmText = getText(IGUI_PlayerText_HNWarningPre)
+		return alarmText
+	else
+		local rAlarmIndex = ZombRand(10);
+		local rAlarmText = "IGUI_PlayerText_HNWarning0"..tostring(rAlarmIndex);
+		local alarmText = getText(rAlarmText)
+		return alarmText
+	end		
+end	
+
+function HN_AlarmEveryOne(AlarmText)
 		local aPlayer = getPlayer();
 		if aPlayer == nil then
 				return
 		end
-		local rAlarmIndex = ZombRand(10);
-		local rAlarmText = "IGUI_PlayerText_HNWarning0"..tostring(rAlarmIndex);
-		aPlayer:Say(getText(rAlarmText));
+		
+		aPlayer:Say(HN_GET_AlarmText());
 		local rAlarmSound = "zombierand"..tostring(ZombRand(10));
 		local aZed = getSoundManager():PlaySound(rAlarmSound,false,0);
     getSoundManager():PlayAsMusic(rAlarmSound,aZed,false,0);

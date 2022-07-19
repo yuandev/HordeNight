@@ -9,4 +9,5 @@ IGUI_CN = {
 	IGUI_PlayerText_HNWarning07 = "如果我能活过之前的一切，那我也能活过今天。",
 	IGUI_PlayerText_HNWarning08 = "他们想要我成为他们的一份子，我会吗？",
 	IGUI_PlayerText_HNWarning09 = "事情变得更严重了……他们来了。",
+	IGUI_PlayerText_HNWarningPre = "今天就是尸潮之夜，我得找个安全的地方。",
 }

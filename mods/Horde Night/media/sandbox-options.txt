@@ -72,14 +72,24 @@ option HordeNightMain.RandomHordeNightChance
 }
 
 
-option HordeNightMain.HordeNightZombieSpawnDistance
+option HordeNightMain.HordeNightZombieSpawnDistanceMax
 {
 	type = integer,
 	min = 10,
 	max = 90,
 	default = 75,
 	page = ZombieAdvanced,
-	translation = HN_HordeNightZombieSpawnDistance,
+	translation = HN_HordeNightZombieSpawnDistanceMax,
+}
+
+option HordeNightMain.HordeNightZombieSpawnDistanceMin
+{
+	type = integer,
+	min = 10,
+	max = 90,
+	default = 10,
+	page = ZombieAdvanced,
+	translation = HN_HordeNightZombieSpawnDistanceMin,
 }
 
 option HordeNightMain.HordeNightIndicator

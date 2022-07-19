@@ -9,4 +9,5 @@ IGUI_EN = {
 	IGUI_PlayerText_HNWarning07 = "If I can survive before, I can survive now.",
 	IGUI_PlayerText_HNWarning08 = "They want me to join them, will I?",
 	IGUI_PlayerText_HNWarning09 = "Things just keep getting worse... here they come.",
+	IGUI_PlayerText_HNWarningPre = "They will come today , I need to find a safe place .",
 }
