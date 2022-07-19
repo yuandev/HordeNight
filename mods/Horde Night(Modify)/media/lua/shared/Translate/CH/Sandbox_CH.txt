@@ -1,0 +1,29 @@
+Sandbox_CH = {
+	Sandbox_HN_HordeNightHour = "�ͼ�}�l�ɶ�"
+	Sandbox_HN_HordeNightHour_tooltip = "�M�w�ͼ�b�@�Ѫ����@�p�ɶ}�l�C"
+
+	Sandbox_HN_FirstHordeNightDay = "�Ĥ@���ͼ骺���"
+	Sandbox_HN_FirstHordeNightDay_tooltip = "�M�w�Ĥ@���ͼ�}�l������C\n0�N���ۦb�X�ͪ��o�@�Ѷ}�l�A1�N���ۦb�X�᪺ͫ�U�@�Ѷ}�l�C"
+
+	Sandbox_HN_HordeNightFrequency = "�ͼ鶡�j"
+	Sandbox_HN_HordeNightFrequency_tooltip = "�M�w�Ĥ@���ͼ餧�᪺�C�@���ͼ�N���j�h�֤ѵo�ͤ@���C\n1�N���ۨC�@�ѳ��|���ͼ�C"
+
+	Sandbox_HN_FirstHordeNightZombiesCount = "�Ĥ@���ͼ骺���Ͷq"
+	Sandbox_HN_FirstHordeNightZombiesCount_tooltip = "�M�w�Ĥ@���ͼ�ɷ|�Ӧh�ֻ��͡C\n�`�N�G�Ӧh�����ͷ|�ɭP�C���B�椣�ΡC"
+
+	Sandbox_HN_HordeNightZombieIncrement = "�C�@���ͼ骺���ͼW���q"
+	Sandbox_HN_HordeNightZombieIncrement_tooltip = "�M�w�C�s���L�@���ͼ��A�U�@���ͼ�|�W�[�h�ֻ��ͼƶq�C\n�`�N�G�Ӧh�����ͷ|�ɭP�C���B�椣�ΡC"
+
+	Sandbox_HN_HordeNightZombieCountMax = "�ͼ骺���Ͷq�W��"
+	Sandbox_HN_HordeNightZombieCountMax_tooltip = "�M�w�@���ͼ�̦h��Ӧh�ֻ��͡C\n�`�N�G�Ӧh�����ͷ|�ɭP�C���B�椣�ΡC"
+
+	Sandbox_HN_RandomHordeNightChance = "�H���ͼ�X�{�X�v"
+	Sandbox_HN_RandomHordeNightChance_tooltip = "�M�w�b�W�w���ͼ������~����l���A�H���X�{�ͼ骺�X�v�C\n0.0�N���ۤ��|���H���ͼ�A1.0�N���ۨC�ѳ��|���ͼ�C"
+
+	Sandbox_HN_HordeNightZombieSpawnDistance = "�ͼ���ͥͦ��Z��"
+	Sandbox_HN_HordeNightZombieSpawnDistance_tooltip = "�M�w�b�ͼ餤���ͦb���a����ͦ����̻��Z���C \n�p�G�b�ͼ餤�S�����ͥͦ��д�ֳo�ӶZ���C"
+	
+	Sandbox_HN_HordeNightIndicator = "����ͼ����"
+	Sandbox_HN_HordeNightIndicator_tooltip = "���}��A�p�G�B�_�|�o�ͫͼ餧�]����l�A�b�̹��k�W���|��ܤ@�Ӽ��ѹϼСC�o�Ӥ��|�����H���ͼ餧�]�C"
+	
+}
