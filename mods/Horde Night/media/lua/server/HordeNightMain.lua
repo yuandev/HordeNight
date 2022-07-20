@@ -130,11 +130,13 @@ end
 
 -- 0:00 Remind before HordeNight Start
 function HN_RemindBeforeStartHordeNight()
+	HN_AlarmEveryOne("1");
 	if getGameTime():getHour() % 24 == 0 then
 		local daysPass = math.floor(HN_getActualSpawnAgeDay());
 		print("New Day: "..tostring(daysPass));
 		if daysPass >= SandboxVars.HordeNightMain.FirstHordeNightDay then
-			
+			local alarmText = getText("IGUI_PlayerText_HNWarningPre");
+			HN_AlarmEveryOne(alarmText);
 		end	
 	end	
 end
@@ -143,7 +145,10 @@ end
 function HN_StartHordeNight(HNcounts)
 		local HNZombieCounts = SandboxVars.HordeNightMain.FirstHordeNightZombiesCount + SandboxVars.HordeNightMain.HordeNightZombieIncrement * HNcounts;
 		HNZombieCounts = math.min(HNZombieCounts, SandboxVars.HordeNightMain.HordeNightZombieCountMax)
-		HN_AlarmEveryOne();
+		local rAlarmIndex = ZombRand(10);
+		local rAlarmText = "IGUI_PlayerText_HNWarning0"..tostring(rAlarmIndex);
+		local alarmText = getText(rAlarmText);
+		HN_AlarmEveryOne(rAlarmText);
 		if getPlayer() == nil then
 				return
 		end
@@ -154,25 +159,13 @@ end
 
 -- When start, alarm everyone online
 
-function HN_GET_AlarmText()
-	if getGameTime():getHour() % 24 == 0 then
-		local alarmText = getText(IGUI_PlayerText_HNWarningPre)
-		return alarmText
-	else
-		local rAlarmIndex = ZombRand(10);
-		local rAlarmText = "IGUI_PlayerText_HNWarning0"..tostring(rAlarmIndex);
-		local alarmText = getText(rAlarmText)
-		return alarmText
-	end		
-end	
-
 function HN_AlarmEveryOne(AlarmText)
 		local aPlayer = getPlayer();
 		if aPlayer == nil then
 				return
 		end
 		
-		aPlayer:Say(HN_GET_AlarmText());
+		aPlayer:Say(AlarmText);
 		local rAlarmSound = "zombierand"..tostring(ZombRand(10));
 		local aZed = getSoundManager():PlaySound(rAlarmSound,false,0);
     getSoundManager():PlayAsMusic(rAlarmSound,aZed,false,0);
@@ -241,6 +234,7 @@ end
 
 Events.OnGameStart.Add(HN_Setup);
 Events.EveryHours.Add(HN_CheckStartHordeNight);
+Events.EveryHours.Add(HN_RemindBeforeStartHordeNight);
 Events.OnTick.Add(HN_CheckSpawnHordeZombies);
 Events.OnClientCommand.Add(HN_onSpawnCommand);
 --Events.OnKeyPressed.Add(HN_DebugCheck);
