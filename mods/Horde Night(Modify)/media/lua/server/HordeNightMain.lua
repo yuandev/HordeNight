@@ -130,11 +130,12 @@ end
 
 -- 0:00 Remind before HordeNight Start
 function HN_RemindBeforeStartHordeNight()
+	HN_AlarmEveryOne("1");
 	if getGameTime():getHour() % 24 == 0 then
 		local daysPass = math.floor(HN_getActualSpawnAgeDay());
 		print("New Day: "..tostring(daysPass));
 		if daysPass >= SandboxVars.HordeNightMain.FirstHordeNightDay then
-			local alarmText = getText(IGUI_PlayerText_HNWarningPre);
+			local alarmText = getText("IGUI_PlayerText_HNWarningPre");
 			HN_AlarmEveryOne(alarmText);
 		end	
 	end	
