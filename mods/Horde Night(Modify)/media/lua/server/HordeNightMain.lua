@@ -49,9 +49,12 @@ function HN_SpawnOneZombieAround(cPlayer)
 
 				randomR = 0;
 				randomRad = 0;
-
-				randomR = math.random([sandboxDistanceMin,sandboxDistanceMax]);
-    			randomRad = math.rad(math.random(360));
+				if sandboxDistanceMax >= sandboxDistanceMin then
+					randomR = ZombRand(sandboxDistanceMax - sandboxDistanceMin) + sandboxDistanceMin;
+				else
+					randomR = ZombRand(5) + sandboxDistanceMin;
+				end
+    			randomRad = math.rad(ZombRand(360));
     			zLocationX = math.modf(math.sin(randomRad)*randomR);
     			zLocationY = math.modf(math.cos(randomRad)*randomR);
 
@@ -141,6 +144,23 @@ function HN_StartHordeNight(HNcounts)
 		getPlayer():getModData().HNHordeRemain = HNZombieCounts;
 end
 
+function HN_AlarmBeforeHordeNight()
+	if getGameTime():getHour() % 24 == 0 then
+		local daysPass = math.floor(HN_getActualSpawnAgeDay());
+		print("It's the hour for HordeNight, day: "..tostring(daysPass));
+		if daysPass >= SandboxVars.HordeNightMain.FirstHordeNightDay then
+			local dayAfterFirst = daysPass - SandboxVars.HordeNightMain.FirstHordeNightDay;
+			if dayAfterFirst % SandboxVars.HordeNightMain.HordeNightFrequency == 0 then
+				local aPlayer = getPlayer();
+				if aPlayer == nil then
+					return
+				end
+				aPlayer:Say(getText("IGUI_PlayerText_HNWarningPre"));
+			end
+		end
+	end
+end
+
 -- When start, alarm everyone online
 function HN_AlarmEveryOne()
 		local aPlayer = getPlayer();
@@ -218,6 +238,7 @@ end
 
 Events.OnGameStart.Add(HN_Setup);
 Events.EveryHours.Add(HN_CheckStartHordeNight);
+Events.EveryHours.Add(HN_AlarmBeforeHordeNight);
 Events.OnTick.Add(HN_CheckSpawnHordeZombies);
 Events.OnClientCommand.Add(HN_onSpawnCommand);
 --Events.OnKeyPressed.Add(HN_DebugCheck);
