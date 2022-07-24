@@ -25,6 +25,12 @@ Sandbox_EN = {
 
 	Sandbox_HN_HordeNightZombieSpawnDistanceMin = "HordeNight Spawn Distance(Min)"
 	Sandbox_HN_HordeNightZombieSpawnDistance_tooltipMin = "The minimal distance for a HordeNight zombie to spawn around players."
+	
+	Sandbox_HN_HordeNightZombieSpawnBeginAngle = "BeginAngle"
+	Sandbox_HN_HordeNightZombieSpawnBeginAngle_tooltip = "BeginAngle(RightBottom 0°)"
+
+	Sandbox_HN_HordeNightZombieSpawnAngle = "Angle"
+	Sandbox_HN_HordeNightZombieSpawnAngle_tooltip = "Angle"
 
 	Sandbox_HN_HordeNightIndicator = "HordeNight Indicator"
 	Sandbox_HN_HordeNightIndicator_tooltip = "When it's on, there will be an icon on the top right if it's currently the HordeNight day.This will not indicates the random HordeNight."

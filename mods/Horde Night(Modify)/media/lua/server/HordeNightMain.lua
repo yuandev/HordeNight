@@ -45,18 +45,30 @@ function HN_SpawnOneZombieAround(cPlayer)
 		local canSpawn = false;
 		local sandboxDistanceMax = SandboxVars.HordeNightMain.HordeNightZombieSpawnDistanceMax;
 		local sandboxDistanceMin = SandboxVars.HordeNightMain.HordeNightZombieSpawnDistanceMin;
+		local sandboxBeginAngle = SandboxVars.HordeNightMain.HordeNightZombieSpawnBeginAngle;
+		local sandboxAngle = SandboxVars.HordeNightMain.HordeNightZombieSpawnAngle;
 		for i=0, 100 do
 
-				randomR = 0;
-				randomRad = 0;
+				local randomR = 0;
+				local randomAngle = 0;
 				if sandboxDistanceMax >= sandboxDistanceMin then
 					randomR = ZombRand(sandboxDistanceMax - sandboxDistanceMin) + sandboxDistanceMin;
 				else
 					randomR = ZombRand(5) + sandboxDistanceMin;
 				end
-    			randomRad = math.rad(ZombRand(360));
-    			zLocationX = math.modf(math.sin(randomRad)*randomR);
-    			zLocationY = math.modf(math.cos(randomRad)*randomR);
+				if sandboxBeginAngle + sandboxAngle >= 360 then
+					if ZombRand(2) == 1 then
+						randomAngle = ZombRand(360 - sandboxBeginAngle) + sandboxBeginAngle;
+					else
+						randomAngle = ZombRand(sandboxBeginAngle + sandboxAngle -360);
+					end
+				else
+					randomAngle = ZombRand(sandboxAngle) + sandboxBeginAngle;
+				end
+				print("begin angle:"..tostring(sandboxBeginAngle).."angle:"..tostring(sandboxAngle).."spawn angle:"..tostring(randomAngle));
+    			randomRad = math.rad(randomAngle);
+    			zLocationX = math.modf(math.cos(randomRad)*randomR);
+    			zLocationY = math.modf(math.sin(randomRad)*randomR);
 
 				zLocationX = zLocationX + pLocation:getX();
 				zLocationY = zLocationY + pLocation:getY();

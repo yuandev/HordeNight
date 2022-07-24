@@ -92,6 +92,26 @@ option HordeNightMain.HordeNightZombieSpawnDistanceMin
 	translation = HN_HordeNightZombieSpawnDistanceMin,
 }
 
+option HordeNightMain.HordeNightZombieSpawnBeginAngle
+{
+	type = integer,
+	min = 0,
+	max = 360,
+	default = 0,
+	page = ZombieAdvanced,
+	translation = HN_HordeNightZombieSpawnBeginAngle,
+}
+
+option HordeNightMain.HordeNightZombieSpawnAngle
+{
+	type = integer,
+	min = 0,
+	max = 360,
+	default = 360,
+	page = ZombieAdvanced,
+	translation = HN_HordeNightZombieSpawnAngle,
+}
+
 option HordeNightMain.HordeNightIndicator
 {
 	type = boolean,
